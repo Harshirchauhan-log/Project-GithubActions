@@ -22,10 +22,10 @@ jobs:
         with:
           context: .
           push: true
-          tags: Harshirchauhan-log/NewAction:v1.0.1
+          tags: harshirchauhan-log/newaction:v1.0.1
 
       - name: Run Container
-        run: docker run -d -p 5000:5000 --name NewAction-container Harshirchauhan-log/NewAction:v1.0.1
+        run: docker run -d -p 5000:5000 --name newaction-container harshirchauhan-log/newaction:v1.0.1
 
       - name: Smoke Test
         run: |
